@@ -18,7 +18,7 @@ export default function characterSidebar({ charactersNameArray, isCharacterSideb
                 {charactersNameArray.map((charactersName, index) => (
                     <li key={index} className={styles.navItems}>
                         <div className={styles.logoWrapper}>
-                            <Image src={`/assets/images/characters/${charactersName}/icon.png`} alt={charactersName} width={50} height={50} className={styles.logoImg} />
+                            <Image src={`/assets/images/characters/${charactersName}/icon.png`} alt={charactersName} width={50} height={50} priority className={styles.logoImg} />
                         </div>
                         <Link href={`/characters/${charactersName}`}>
                             <a className={styles.linkBtn} onClick={() => closeSidebar()}>{capitalizeFirstLetter(charactersName)}</a>

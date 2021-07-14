@@ -23,7 +23,7 @@ export default function CharacterInfo({ characterData }) {
                         <h5 className={styles.title}>Vision:</h5>
                         <p className={styles.paragraph}>{vision}</p>
                         <div className={styles.visionWrapper}>
-                            <Image src={`/assets/images/visions/${vision}.jpg`} alt={vision} width={50} height={50} className={styles.vision} />
+                            <Image src={`/assets/images/visions/${vision}.jpg`} alt={vision} width={50} height={50} priority className={styles.vision} />
                         </div>
                     </div>
                     <div className={styles.characterTextInfo}>
