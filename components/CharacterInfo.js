@@ -15,7 +15,7 @@ export default function CharacterInfo({ characterData }) {
         <div className={styles.characterInfo}>
             <div className={styles.container}>
                 <div className={styles.characterImgWrapper}>
-                    <Image src={`/assets/images/characters/${characterNameParam}/portrait.png`} alt={name} layout='responsive' width={500} height={900} priority objectFit='contain' />
+                    <Image src={`https://api.genshin.dev/characters/${characterNameParam }/portrait`} alt={name} layout='responsive' width={500} height={900} priority objectFit='contain' />
                 </div>
                 <div className={styles.characterText}>
                     <h1 className={styles.name}>{name}</h1>
